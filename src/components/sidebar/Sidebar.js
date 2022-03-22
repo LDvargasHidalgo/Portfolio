@@ -9,6 +9,7 @@ import "../style/global.css";
 import "../style/sidebar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFacebook} from  '@fortawesome/free-brands-svg-icons'
+import {NavLink} from 'react-router-dom'
 
 
 function sidebar() {
@@ -30,10 +31,11 @@ function sidebar() {
       </center>
       <br />
       <div className="icons">
-      <a href="#"> <img src={Home} alt=""  className="icon"/><span>Home</span>  </a>
-      <a href="#"> <img src={About} alt=""  className="icon"/><span>About</span>  </a>
-      <a href="#"> <img src={Portfolio} alt=""  className="icon"/><span>Portfolio</span>  </a>
-      <a href="#"> <img src={Contact} alt=""  className="icon"/><span>Contact</span>  </a>
+
+      <NavLink to="/"> <img src={Home} alt=""  className="icon"/><span>Home</span>  </NavLink>
+      <NavLink to="about"> <img src={About} alt=""  className="icon"/><span>About</span>  </NavLink>
+      <NavLink to="portfolio"> <img src={Portfolio} alt=""  className="icon"/><span>Portfolio</span>  </NavLink>
+      <NavLink to="contact"> <img src={Contact} alt=""  className="icon"/><span>Contact</span>  </NavLink>
     </div>
     </div>
      </div>

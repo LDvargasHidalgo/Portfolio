@@ -65,6 +65,10 @@ nav ul li a:hover {
     background: var(--secondary-color);
     padding-left: 20px;
 }
+.active{
+    background: var(--secondary-color);
+    padding-left: 20px;
+}
 
 .side-menu span {
     font-size: 20px;
