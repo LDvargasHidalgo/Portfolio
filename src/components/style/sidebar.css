@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background:var(--background);
+    line-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+label {
+    line-height: 80px;
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+    margin-left: 35px;
+    cursor: pointer;
+    margin-top: 110px;
+}
+
+/* nav ul {
+    float: right;
+    margin-right: 20px;
+} */
+
+
+nav ul li a:hover {
+    color: white;
+}
+
+.side-menu {
+    position: fixed;
+    background:var(--background);
+    width: 250px;
+    height: 100%;
+    margin-top: 80px;
+}
+
+.side-menu center img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%; 
+    border: 3px solid white;
+}
+
+.side-menu center h2 {
+    color: white;
+}
+
+.icon{
+   width: 50px;
+}
+
+.side-menu a {
+    display: block;
+    line-height: 60px;
+    transition: 0.5s;
+}
+
+.side-menu a:hover {
+    background: var(--secondary-color);
+    padding-left: 20px;
+}
+
+.side-menu span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+}
+
+.side-menu img {
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+
+nav .menu-bar {
+    float: right;
+    margin-top: 20px;
+    display: none;
+    margin-right: 20px;
+}
+
+#menu {
+    display: none;
+}
+
+.side-menu .Logout {
+    display: none;
+}
+
+.icons{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+.logo{
+   width: 120px;
+}
+
+@media (max-width:850px) {
+    .side-menu a span {
+        display: none;
+    }
+
+    .side-menu center {
+        display: none;
+    }
+
+    .side-menu {
+        width: 100px;
+    }
+
+    .side-menu a FontAwesomeIcon {
+        display: block;
+        line-height: 80px;
+        text-align: center;
+        margin-left: 0;
+        font-size: 35px;
+    }
+
+    .data {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width:650px) {
+    .data {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .side-menu {
+        width: 100%;
+        text-align: center;
+        left: 100%;
+        background-color: #4c516d;
+        transition: all 0.5s;
+    }
+
+    .side-menu a FontAwesomeIcon {
+        display: none;
+    }
+
+    .side-menu a span {
+        display: block;
+    }
+
+    .side-menu .Logout {
+        display: block;
+    }
+
+    nav .menu-bar {
+        display: block;
+    }
+}
+
+#menu:checked~.side-menu {
+    left: 0;
+}
